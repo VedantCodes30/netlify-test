@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: system-ui;
+}
+
+body {
+  background: linear-gradient(135deg, #2196f3, #673ab7);
+  color: aliceblue;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+}
+
+label {
+  font-size: 2em;
+  font-weight: 100;
+}
+
+button {
+  font-weight: bolder;
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 130px 12px 261px 31px;
+  transition: 200ms ease-in;
+}
+
+button:hover {
+  translate: 10px;
+  scale: 1.1;
+  cursor: pointer;
+  border-radius: 200px 24px 261px 31px;
+}
+
+input:hover {
+  transition: 200ms;
+  translate: 10px;
+  scale: 1.1;
+  cursor: pointer;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+#output {
+  color: rgb(255, 255, 255);
+}
