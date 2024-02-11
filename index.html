@@ -2,21 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Async Demo</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <h1>Async JavaScript⚙️</h1>
-    <label for="quota">Number of Primes:</label>
-    <input type="text" id="quota" name="quota" value="1000000" />
+    <header>
+      <div class="navbar-container">
+        <h1 id="nav-title">Frontend Dev</h1>
+        <!--Navigation-->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Homepage-->
+    <div class="hero">
+      <h1>Welcome to homepage 🏠</h1>
+      <img class="manimg" src="./manimg.svg" alt="man with laptop" />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem vel
+        consequatur, animi dignissimos distinctio doloremque reprehenderit
+        assumenda eum explicabo dolores odit dolorem laudantium amet dolorum
+        corrupti rerum non quaerat optio!
+      </p>
+    </div>
 
-    <button id="generate">Generate primes</button>
-    <button id="reload">Reload</button>
-
-    <div id="output"></div>
-
-    <script src="index.js"></script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
