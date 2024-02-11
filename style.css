@@ -9,6 +9,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  transition: 500ms ease-in;
+}
+
 html,
 body {
   height: 100%;
