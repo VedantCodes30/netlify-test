@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,8 +15,9 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#" class="active">Contact</a></li>
+            <li><a href="skills.html">Skills</a></li>
           </ul>
         </nav>
       </div>
@@ -24,15 +25,29 @@
     <!--Contact Us-->
     <div class="hero">
       <h1>Contact us 📱</h1>
-      <img class="manimg" src="/manimg.svg" alt="man with laptop" />
+      <img class="manimg" src="manimg.svg" alt="man with laptop" />
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem vel
         consequatur, animi dignissimos distinctio doloremque reprehenderit
         assumenda eum explicabo dolores odit dolorem laudantium amet dolorum
         corrupti rerum non quaerat optio!
       </p>
+
+      <form>
+        <label for="name">Enter your name: </label>
+        <input type="text" required /> <br />
+
+        <label for="email">Enter your Email: </label>
+        <input type="email" required /> <br />
+
+        <label for="msg">Message:</label>
+        <input type="text" required id="message-box" /> <br />
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
     </div>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

@@ -1,32 +1,25 @@
+/*Root declarations*/
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+
+/*Attribute Selectors*/
 
 html,
 body {
-  height: 100%;
-  transition: 500ms ease-in;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  background: linear-gradient(155deg, #00246b, #5e6674) no-repeat;
+  background-repeat: no-repeat;
+  height: 100%;
+  transition: 500ms ease-in;
+  background: linear-gradient(327deg, #3d80f4, black);
   color: white;
   min-height: 100vh;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: linear-gradient(150deg, #1f2d68, #ffffff42);
-  height: 65px;
 }
 
 nav ul {
@@ -37,30 +30,26 @@ nav ul {
 }
 
 nav li {
+  border-radius: 10px;
+  width: 80px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.373);
+  color: rgb(0, 0, 0);
   margin-left: 20px;
+  margin-right: 20px;
 }
 a:hover {
-  color: yellow;
-  transition: 500ms ease;
+  filter: blur(100%);
+  color: rgb(0, 60, 255);
+  transition: 100ms ease-in-out;
+}
+nav ul li:hover {
+  color: rgb(0, 89, 255);
 }
 
 a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-}
-
-#nav-title {
-  margin-right: 180px;
-}
-
-.manimg {
-  filter: opacity(50%);
-  width: 300px;
-  height: 300px;
-}
-
-.hero {
-  display: grid;
 }
 
 li {
@@ -69,14 +58,12 @@ li {
 
 footer {
   display: flex;
-  flex: 1;
-  justify-content: end;
-  position: sticky;
+  position: absolute;
   width: 100%;
-  height: 60px;
-  background: linear-gradient(150deg, #1f2d68, #ffffff42);
+  background: linear-gradient(150deg, #1f2d68, transparent);
   justify-content: space-around;
-  align-items: flex-start;
+  bottom: 0;
+  border-radius: 10px;
 }
 
 footer ul {
@@ -85,4 +72,128 @@ footer ul {
 
 footer li {
   margin-left: 20px;
+}
+
+/*Class Selectors*/
+
+.skills-list {
+  display: flex;
+  width: 100%;
+  height: 475px;
+  justify-content: center;
+  align-content: center;
+  gap: 73px 138px;
+  flex-wrap: wrap;
+}
+
+#skills-ul {
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 7px 193px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.skills-list img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 174px;
+  max-width: 100%;
+  height: 174px;
+}
+
+.active {
+  color: rgb(255, 148, 8);
+}
+
+.navbar-container {
+  box-shadow: 0px 0 10px 1px black;
+  position: relative;
+  margin-left: 20px;
+  height: 80px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(327deg, #0f3a83c5, black);
+}
+
+.manimg {
+  filter: opacity(50%);
+  width: 300px;
+  height: 300px;
+  z-index: 0;
+  float: right;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(327deg, #3d80f4, black);
+  border-radius: 20px;
+  margin: 20px 48px;
+}
+
+.form {
+  width: auto;
+  height: fit-content;
+  background: linear-gradient(327deg, #3d80f4, black);
+  display: grid;
+  place-items: center;
+}
+
+.skill-item p {
+  margin-top: 10px; /* Adjust as needed */
+}
+/*ID Selectors*/
+
+#message-box {
+  border: none;
+}
+
+#nav-title {
+  margin-right: 700px;
+}
+
+/*Responsive Media Queries*/
+@media screen and (max-width: 768px) {
+  #nav-title {
+    margin-right: 20px; /* Adjust as needed for smaller screens */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #nav-title {
+    margin-right: 20px; /* Adjust as needed for smaller screens */
+  }
+
+  .hero {
+    margin: auto;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .skills-list {
+    justify-content: center;
+  }
+
+  .skills-list li {
+    flex: 0 0 calc(33.33% - 20px); /* Three items per row */
+  }
+
+  .skills-list img {
+    width: 80px; /* Adjust as needed for smaller screens */
+    height: 80px; /* Adjust as needed for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills-list li {
+    flex: 0 0 calc(50% - 20px); /* Two items per row */
+  }
 }
