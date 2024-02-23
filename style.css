@@ -14,12 +14,13 @@ body {
 }
 
 body {
-  background-repeat: no-repeat;
   height: 100%;
-  transition: 500ms ease-in;
-  background: linear-gradient(327deg, #3d80f4, black);
+  background: linear-gradient(327deg, #0742a8, black);
   color: white;
   min-height: 100vh;
+}
+
+h1 {
 }
 
 nav ul {
@@ -38,11 +39,13 @@ nav li {
   margin-left: 20px;
   margin-right: 20px;
 }
+
 a:hover {
   filter: blur(100%);
   color: rgb(0, 60, 255);
   transition: 100ms ease-in-out;
 }
+
 nav ul li:hover {
   color: rgb(0, 89, 255);
 }
@@ -54,6 +57,25 @@ a {
 
 li {
   list-style-type: none;
+}
+
+form {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+label {
+  margin-bottom: 3px;
+}
+
+input {
+  position: relative;
+  display: grid;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  background: #ffffff;
 }
 
 footer {
@@ -71,7 +93,13 @@ footer ul {
 }
 
 footer li {
+  font-weight: 600;
   margin-left: 20px;
+}
+
+footer li:hover {
+  color: #1f2d68;
+  text-decoration: underline;
 }
 
 /*Class Selectors*/
@@ -132,6 +160,8 @@ footer li {
 }
 
 .hero {
+  padding: 20px;
+  position: relative;
   text-align: center;
   background: linear-gradient(327deg, #3d80f4, black);
   border-radius: 20px;

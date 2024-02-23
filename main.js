@@ -8,5 +8,4 @@ footer.innerHTML = `<footer>
     </ul>
 </footer>`;
 
-
 document.body.appendChild(footer);
